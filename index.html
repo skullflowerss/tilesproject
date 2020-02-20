@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Tiles project</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+
+	<script src="sketch.js"></script>
+
+	<style>
+	html,body{
+		font-family: Courier;
+		text-align: center;
+	}
+
+	.about{
+		width:50%;
+		margin:auto;
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#sketch{
+		margin: 100px 0 100px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		line-height: 0.3em;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="about">
+	<h1>Tile Project</h1>
+
+	<p>I started reading Robert Bosch book "Opt Art: From Mathematical Optimization to Visual Design"
+	and wanted to play a little bit with some of the concepts related with the first chapter, <a href="https://en.wikipedia.org/wiki/Truchet_tiles">The Truchet Tiles</a>.
+	Meanwhile I was working in this I made a little image processing stuff with p5.js using the tile concepts and
+	the mesuarement of brightness pixels to make it visible.
+	</p>
+
+	<h2>Instructions, use, whatever</h2>
+	<p>Its really easy to use, you just need to upload a picture, select the size of the tile and the order of them
+	then you can right click the image and save it.
+	</p>
+
+	<h3>Discccccclaimer</h3>
+	<p>Im still trying to figuring out how to resize the pictures properly because theres a kind of process/time/performance issue
+	if the image is big and that. The default size is the width and height of the picture multiplied by *8 if is horizontal and vertical.
+	If someone knows a better way to make this a good size, tell me please. I will add it.
+	</p>
+	</div>
+	<div id="sketch"></div>
+
+</body>
+</html>
